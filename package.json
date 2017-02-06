@@ -1,0 +1,25 @@
+{
+  "name": "react-course-ru",
+  "version": "1.0.0",
+  "description": "React RU tutorial",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UHanczar/react-course-ru.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "U.Hanczar (u.hanczar@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UHanczar/react-course-ru/issues"
+  },
+  "homepage": "https://github.com/UHanczar/react-course-ru#readme",
+  "devDependencies": {
+    "express": "^4.14.1"
+  }
+}
