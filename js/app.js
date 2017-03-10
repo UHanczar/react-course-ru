@@ -123,24 +123,16 @@ const News = React.createClass({
 // });
 
 const TestInput = React.createClass({
-  getInitialState: function () {
-    return ({ inputValue: '' });
-  },
-  onChangeHandler: function (e) {
-    this.setState({ inputValue: e.target.value }, function () {
-      console.log(this.state.inputValue);
-    });
-  },
-
   onSendButton: function () {
-    alert(this.state.inputValue);
+    console.log(this.refs);
+    alert(ReactDOM.findDOMNode(this.refs.myTestInput).value);
   },
 
   render: function () {
     return (
       <div>
-        <input className="test-input" value={this.state.inputValue} onChange={ this.onChangeHandler } placeholder="enter value" />
-        <button onClick={this.onSendButton}>Send</button>
+        <input className="test-input" defaultValue="" placeholder="enter value" ref="myTestInput" />
+        <button onClick={this.onSendButton} ref="alert_button">Send</button>
       </div>
     )
   }
