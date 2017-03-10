@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/UHanczar/react-course-ru#readme",
   "devDependencies": {
+    "eslint-config-standard-react": "^4.2.0",
+    "eslint-plugin-react": "^6.10.0",
+    "eslint-plugin-standard": "^2.1.1",
     "express": "^4.14.1"
   }
 }
